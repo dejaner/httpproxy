@@ -1,0 +1,17 @@
+{
+  "name": "httpproxy",
+  "version": "1.0.0",
+  "description": "A simple proxy for terminating https 443 to localhost:8080",
+  "main": "proxy.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http-proxy": "^1.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "sudo node proxy.js",
+    "generate": "openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem"
+  },
+  "author": "Dejan Erjavec",
+  "license": "MIT"
+}
